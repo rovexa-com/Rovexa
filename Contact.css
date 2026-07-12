@@ -1,0 +1,483 @@
+
+
+/*------------------CONTACT US PAGE------------------------------------------------*/
+
+html,
+body{
+  width:100%;
+  min-height:100%;
+  overflow-x:hidden;
+  overflow-y:auto;
+}
+
+
+
+
+
+
+
+
+.contact-hero-div{
+  width:100%;
+  padding:80px 40px 120px;
+}
+
+.contact-hero-container{
+  width:100%;
+  max-width:1400px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:minmax(0,1.25fr) 7px minmax(320px,.75fr);
+  gap:50px;
+  align-items:stretch;
+}
+
+.contact-section{
+  width:100%;
+  min-width:0;
+  padding:25px;
+  background:#000;
+  border:4px solid #d6d6d6;
+  border-radius:20px;
+  overflow:hidden;
+  
+}
+
+
+
+.input-row{
+  display: flex;
+  gap: 20px;
+}
+
+.input-row .input-group{
+  flex: 1;
+}
+
+@media (max-width: 768px){
+  .input-row{
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+
+@media (max-width: 1200px){
+
+  .contact-hero-container{
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .contact-line-deco{
+    display: none;
+  }
+
+  .contact-section,
+  .contact-us-fill{
+    width: 100%;
+    max-width: 700px;
+  }
+
+  .contact-us-fill{
+    padding: 20px;
+    text-align: center;
+  }
+
+  .contact-text{
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-icon-box{
+    width: 100%;
+  }
+
+
+  .contact-icon-box{
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+
+/* ================= SMALL MOBILE ================= */
+@media (max-width: 768px){
+
+  
+
+  .form-container h1{
+    font-size: 34px;
+  }
+
+  .contact-us-fill h1{
+    font-size: 32px;
+  }
+
+  .contact-icon-card{
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .contact-icon{
+    margin-right: 0;
+  }
+}
+
+.contact-text{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+
+.contact-us-fill{
+  width:100%;
+  max-width:550px;
+  padding:30px 10px;
+  display:flex;
+  flex-direction:column;
+  gap:55px;
+}
+
+
+
+
+.contact-us-fill span{
+  color:#585858;
+  font-size:20px;
+  letter-spacing:3px;
+}
+
+.contact-us-fill h1{
+  color:#000;
+  font-size:40px;
+  letter-spacing:3px;
+  line-height:1.15;
+  margin-bottom:10px;
+}
+
+.contact-us-fill p,
+.contact-us-fill a{
+  color:#898989;
+  font-size:17px;
+  font-family:Poppins,sans-serif;
+  line-height:1.7;
+}
+
+
+
+
+.contact-icon-box{
+  width:100%;
+  max-width:500px;
+  display:flex;
+  flex-direction:column;
+  gap:35px;
+}
+
+.contact-icon-card{
+  width:100%;
+  display:flex;
+  align-items:center;
+}
+
+
+.contact-info{
+  min-width:0;
+}
+
+.contact-info a,
+.contact-info p{
+  word-break:break-word;
+}
+
+.contact-icon{
+  width:80px;
+  height:80px;
+  flex:0 0 80px;
+  margin-right:25px;
+  border:3px solid #d3d3d3;
+  border-radius:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  transition:.3s ease;
+}
+
+
+
+
+
+.contact-icon i{
+  margin:0;
+  font-size:25px;
+}
+
+
+.whatsapp-btn{
+  width:fit-content;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  padding:14px 28px;
+  border-radius:50px;
+  background:#25d366;
+  color:#fff;
+  font-family:Poppins,sans-serif;
+  font-size:16px;
+  font-weight:600;
+  text-decoration:none;
+  text-align:center;
+  box-shadow:0 4px 15px rgba(37,211,102,.35);
+  transition:.3s ease;
+}
+
+
+
+.contact-icon-card h1{
+  font-size:24px;
+  letter-spacing:1px;
+  margin:0 0 5px;
+}
+
+
+
+
+
+
+.whatsapp-btn span{
+  color:#fff;
+  font-family:Poppins,sans-serif;
+  font-size:17px;
+  font-weight:600;
+  letter-spacing:0;
+}
+
+
+
+.whatsapp-btn i{
+  color:#fff;
+  font-size:36px;
+}
+
+
+
+.whatsapp-btn:hover{
+  background:#20c05a;
+  transform:translateY(-3px);
+  box-shadow:0 8px 20px rgba(37,211,102,.4);
+}
+
+
+.tally-container{
+  position:relative;
+  width:100%;
+  height:850px;
+  min-height:850px;
+}
+
+.tally-container iframe{
+  display:block;
+  position:static;
+  width:100%;
+  height:100%;
+  border:0;
+}
+
+.contact-line-deco{
+  width:7px;
+  min-height:100%;
+  border-radius:100px;
+  background:linear-gradient(to bottom,white,#d4d4d4,white);
+}
+
+
+/* ================= TABLET ================= */
+
+@media(max-width:1200px){
+
+  .contact-hero-div{
+    padding:70px 30px 100px;
+  }
+
+  .contact-hero-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:60px;
+  }
+
+  .contact-line-deco{
+    display:none;
+  }
+
+  .contact-section,
+  .contact-us-fill{
+    width:100%;
+    max-width:750px;
+  }
+
+  .contact-us-fill{
+    padding:20px;
+    text-align:center;
+    align-items:center;
+  }
+
+  .contact-text{
+    align-items:center;
+    text-align:center;
+  }
+
+  .contact-icon-box{
+    margin:0 auto;
+  }
+
+  .tally-container{
+    height:900px;
+    min-height:900px;
+  }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+  .contact-hero-div{
+     padding: 0px 12px 70px;
+  }
+
+  .contact-hero-container{
+    gap:45px;
+  }
+
+  .contact-section{
+    width:100%;
+    padding:4px;
+    border-width:3px;
+    border-radius:14px;
+  }
+
+  .tally-container{
+    height:950px;
+    min-height:950px;
+    width: 100%;
+  }
+
+  .contact-us-fill{
+    padding:10px 5px;
+    gap:40px;
+  }
+
+  .contact-us-fill span{
+    font-size:16px;
+    letter-spacing:2px;
+  }
+
+  .contact-us-fill h1{
+    font-size:32px;
+    letter-spacing:2px;
+  }
+
+  .contact-us-fill p,
+  .contact-us-fill a{
+    font-size:15px;
+  }
+
+  .contact-icon-box{
+    gap:30px;
+  }
+
+  .contact-icon-card{
+    flex-direction:column;
+    text-align:center;
+    gap:14px;
+  }
+
+  .contact-icon{
+    width:70px;
+    height:70px;
+    flex-basis:70px;
+    margin-right:0;
+  }
+
+  .contact-icon i{
+    font-size:23px;
+  }
+
+  .contact-icon-card h1{
+    justify-content:center;
+    font-size:22px;
+  }
+
+  .whatsapp-btn{
+    width:100%;
+    max-width:340px;
+    padding:14px 20px;
+  }
+
+  .whatsapp-btn span{
+    font-size:15px;
+  }
+
+  .whatsapp-btn i{
+    font-size:32px;
+  }
+}
+
+
+/* ================= SMALL PHONES ================= */
+
+@media(max-width:480px){
+
+  .contact-hero-div{
+     padding:0px 5px 60px;
+  }
+
+  .contact-section{
+    padding:2px;
+    border-radius: 12px;
+  }
+
+  .tally-container{
+    height:1000px;
+    min-height:1000px;
+  }
+
+  .contact-us-fill h1{
+    font-size:28px;
+  }
+
+  .contact-us-fill p,
+  .contact-us-fill a{
+    font-size:14px;
+  }
+
+  .contact-icon-card h1{
+    font-size:20px;
+  }
+}
+
+
+.whatsapp-div{
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+    display: none;
+    margin-top: 80px;
+
+}
+
+@media(max-width:1200px){
+    .whatsapp-div{
+        display: flex;
+
+}
+
+}
