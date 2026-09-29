@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rovexa — Web Design Studio in Kuala Lumpur, Malaysia</title>
+<meta name="description" content="Rovexa designs and builds fast, conversion-focused websites for businesses across Malaysia. Custom design, mobile-first development, and SEO built in — from RM399.">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+<link rel="preload" href="assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/space-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<script>document.documentElement.classList.add("js")</script>
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/home.css">
+</head>
+<body>
+
+<div class="glow-field" aria-hidden="true"><span class="g1"></span><span class="g2"></span><span class="g3"></span></div>
+<div class="noise-layer" aria-hidden="true"></div>
+
+<!-- NAVBAR -->
+<div class="nav-wrap">
+  <header class="navbar">
+    <a href="index.html" class="brand">
+      <img src="assets/img/logo-full.webp" class="logo-full" alt="Rovexa logo" width="340" height="66" decoding="async">
+      <img src="assets/img/logo-icon.webp" class="logo-icon" alt="Rovexa logo" width="72" height="64" decoding="async">
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-ghost btn-sm">Let's talk</a>
+      <a href="contact.html" class="btn btn-primary btn-sm magnetic">Get Started</a>
+    </div>
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+  </header>
+</div>
+<nav class="mobile-panel" aria-label="Mobile">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="pricing.html">Pricing</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html" class="btn btn-primary btn-block">Get Started</a>
+</nav>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">Web design studio · Kuala Lumpur</span>
+        <h1>Websites built to <span class="grad-text">win business</span>, not just look good.</h1>
+        <p class="lead">Rovexa designs and develops fast, custom websites for Malaysian businesses — engineered to load quickly, rank on Google, and turn visitors into paying customers.</p>
+        <div class="cta-row">
+          <a href="contact.html" class="btn btn-brand btn-lg magnetic">Start Your Website <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="pricing.html" class="btn btn-outline btn-lg">See Pricing</a>
+        </div>
+        <div class="hero-note">
+          <span class="dots"><span></span><span></span><span></span></span>
+          Currently taking on new projects for Q4 2026
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="console" id="buildConsole" data-stage="skeleton">
+          <div class="console-bar">
+            <div class="mac-dots" aria-hidden="true">
+              <span class="mac-dot mac-dot--red" title="Close"></span>
+              <span class="mac-dot mac-dot--yellow" title="Minimize"></span>
+              <span class="mac-dot mac-dot--green" title="Maximize"></span>
+            </div>
+            <div class="url">rovexa.my — building your site</div>
+          </div>
+          <div class="console-body">
+            <div class="console-lines">
+              <div class="ln w1"></div>
+              <div class="ln w2"></div>
+              <div class="ln w3"></div>
+              <div class="ln w4"></div>
+            </div>
+
+            <div class="site-preview" id="sitePreview" aria-hidden="true">
+              <div class="sp-inner">
+                <div class="sp-nav">
+                  <span class="sp-logo"></span>
+                  <span class="sp-nav-item"></span>
+                  <span class="sp-nav-item"></span>
+                  <span class="sp-nav-item"></span>
+                </div>
+                <div class="sp-hero">
+                  <span class="sp-heading"></span>
+                  <span class="sp-heading sp-heading--sm"></span>
+                  <span class="sp-text"></span>
+                  <span class="sp-text sp-text--sm"></span>
+                  <span class="sp-cta" id="spCta"></span>
+                </div>
+                <div class="sp-cards">
+                  <span class="sp-card"></span>
+                  <span class="sp-card"></span>
+                  <span class="sp-card"></span>
+                </div>
+                <div class="sp-media"></div>
+                <div class="sp-scan" id="spScan"></div>
+                <div class="sp-ready" id="spReady">✓ Website ready</div>
+              </div>
+            </div>
+
+            <div class="sp-cursor" id="spCursor" aria-hidden="true"></div>
+          </div>
+          <div class="progress-ring" aria-hidden="true">
+            <svg width="74" height="74" viewBox="0 0 74 74">
+              <defs>
+                <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#7c3aed"/>
+                  <stop offset="100%" stop-color="#d946ef"/>
+                </linearGradient>
+              </defs>
+              <circle class="track" cx="37" cy="37" r="31"/>
+              <circle class="bar" id="ringBar" cx="37" cy="37" r="31"/>
+            </svg>
+            <div class="label" id="ringLabel">65%</div>
+          </div>
+        </div>
+        <div class="float-card glass float-1" id="badgeSpeed"><i class="fa-solid fa-gauge-high"></i> Loads in &lt;2s</div>
+        <div class="float-card glass float-2" id="badgeSeo"><i class="fa-solid fa-magnifying-glass"></i> SEO-ready</div>
+        <div class="float-card glass float-3" id="badgeMobile"><i class="fa-solid fa-mobile-screen"></i> Mobile-first</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <div class="trust-strip">
+    <div class="container trust-row">
+      <span>5+ YEARS BUILDING WEB</span><span class="sep">·</span>
+      <span>99% CLIENT SATISFACTION</span><span class="sep">·</span>
+      <span>24/7 PROJECT UPDATES</span><span class="sep">·</span>
+      <span>BASED IN MALAYSIA</span>
+    </div>
+  </div>
+
+  <!-- WHY CHOOSE US -->
+  <section class="section">
+    <div class="container">
+      <div class="why-grid">
+        <div class="why-media" data-reveal>
+          <img src="assets/img/webdevstock.webp" alt="Rovexa designer planning a website layout" width="1000" height="562" loading="lazy" decoding="async">
+          <div class="why-media-badge glass">
+            <p>Founded on a simple idea</p>
+            <h4>Agency-grade websites, without agency-size price tags</h4>
+          </div>
+        </div>
+
+        <div data-reveal>
+          <span class="eyebrow">Why Rovexa</span>
+          <h2 class="mt-16">A modern approach to <span class="grad-text">business websites</span></h2>
+          <p class="text-dim mt-16" style="max-width:520px;">Rovexa was founded to give small and growing businesses the kind of website large companies have — without the complexity or the price tag. From strategy and design to launch and ongoing support, we make sure your site keeps working for your business long after it goes live.</p>
+
+          <div class="why-list mt-32">
+            <div class="why-item">
+              <div class="mark"><i class="fa-solid fa-bolt"></i></div>
+              <div>
+                <h4>Built for speed</h4>
+                <p>Lightweight, high-performance code that loads in under two seconds and keeps visitors on the page.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="mark"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+              <div>
+                <h4>Search optimized</h4>
+                <p>Clean semantic structure and on-page SEO from day one, so your site is ready to rank.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="mark"><i class="fa-solid fa-headset"></i></div>
+              <div>
+                <h4>Ongoing support</h4>
+                <p>We don't disappear after launch — we keep your site secure, updated, and performing well.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES ACCORDION -->
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">What we do</span>
+        <h2>Everything your website needs, <span class="grad-text">handled in-house.</span></h2>
+      </div>
+
+      <div class="services-list" data-reveal-stagger>
+        <div class="service-row open">
+          <span class="num">01</span>
+          <div>
+            <div class="head">
+              <div class="icon-badge"><i class="fa-solid fa-palette"></i></div>
+              <h3>Custom Website Design</h3>
+            </div>
+            <div class="panel"><div class="panel-inner">Every site is designed from scratch around your brand and goals — no recycled templates, no cookie-cutter layouts. Just a website that looks like yours.</div></div>
+          </div>
+          <div class="chevron"><i class="fa-solid fa-plus"></i></div>
+        </div>
+
+        <div class="service-row">
+          <span class="num">02</span>
+          <div>
+            <div class="head">
+              <div class="icon-badge"><i class="fa-solid fa-mobile-screen-button"></i></div>
+              <h3>Mobile-First Development</h3>
+            </div>
+            <div class="panel"><div class="panel-inner">Built for phones first, then scaled up — so your site looks and performs perfectly no matter what device your customers use.</div></div>
+          </div>
+          <div class="chevron"><i class="fa-solid fa-plus"></i></div>
+        </div>
+
+        <div class="service-row">
+          <span class="num">03</span>
+          <div>
+            <div class="head">
+              <div class="icon-badge"><i class="fa-solid fa-gauge-high"></i></div>
+              <h3>Speed Optimization</h3>
+            </div>
+            <div class="panel"><div class="panel-inner">We keep pages lightweight and fast — under two seconds to load — which lowers bounce rate and keeps visitors engaged.</div></div>
+          </div>
+          <div class="chevron"><i class="fa-solid fa-plus"></i></div>
+        </div>
+
+        <div class="service-row">
+          <span class="num">04</span>
+          <div>
+            <div class="head">
+              <div class="icon-badge"><i class="fa-solid fa-magnifying-glass"></i></div>
+              <h3>SEO-Optimized Structure</h3>
+            </div>
+            <div class="panel"><div class="panel-inner">Clean code, proper heading hierarchy, and search-friendly architecture so your site is built to rank on Google from launch.</div></div>
+          </div>
+          <div class="chevron"><i class="fa-solid fa-plus"></i></div>
+        </div>
+
+        <div class="service-row">
+          <span class="num">05</span>
+          <div>
+            <div class="head">
+              <div class="icon-badge"><i class="fa-solid fa-wrench"></i></div>
+              <h3>Website Maintenance</h3>
+            </div>
+            <div class="panel"><div class="panel-inner">Ongoing updates, fixes, and improvements so your website stays secure and keeps performing well over time.</div></div>
+          </div>
+          <div class="chevron"><i class="fa-solid fa-plus"></i></div>
+        </div>
+
+        <div class="service-row">
+          <span class="num">06</span>
+          <div>
+            <div class="head">
+              <div class="icon-badge"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+              <h3>Conversion Optimization</h3>
+            </div>
+            <div class="panel"><div class="panel-inner">Strategic layouts and strong calls-to-action designed to turn casual visitors into real enquiries and sales.</div></div>
+          </div>
+          <div class="chevron"><i class="fa-solid fa-plus"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section" style="background:var(--bg-soft); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+    <div class="container">
+      <div class="section-head center" data-reveal>
+        <span class="eyebrow">How it works</span>
+        <h2>From first call to <span class="grad-text">launch day</span></h2>
+      </div>
+      <div class="process-track" data-reveal-stagger>
+        <div class="process-step is-active">
+          <div class="idx">01</div>
+          <h4>Discover</h4>
+          <p>We learn about your business, goals, and audience before a single line of code is written.</p>
+        </div>
+        <div class="process-step">
+          <div class="idx">02</div>
+          <h4>Design</h4>
+          <p>A clean, modern layout takes shape — focused on your brand, your users, and conversions.</p>
+        </div>
+        <div class="process-step">
+          <div class="idx">03</div>
+          <h4>Develop</h4>
+          <p>Your site is built with fast, responsive, SEO-friendly code from the ground up.</p>
+        </div>
+        <div class="process-step">
+          <div class="idx">04</div>
+          <h4>Launch</h4>
+          <p>After thorough testing, your site goes live — and we stay on to help it grow.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO PREVIEW -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head" data-reveal style="display:flex; align-items:flex-end; justify-content:space-between; gap:24px; max-width:none; flex-wrap:wrap;">
+        <div>
+          <span class="eyebrow">Recent work</span>
+          <h2>A glimpse of what <span class="grad-text">we build.</span></h2>
+        </div>
+        <a href="contact.html" class="btn btn-outline">Start your project <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="portfolio-rail" data-reveal-stagger>
+        <div class="work-card">
+          <img src="assets/img/webdev1.webp" alt="Concept design for a business services website" width="408" height="612" loading="lazy" decoding="async">
+          <div class="arrow"><i class="fa-solid fa-arrow-up-right"></i></div>
+          <div class="work-overlay">
+            <span class="tag">Business Website</span>
+            <h3>Service-Led Company Site</h3>
+          </div>
+        </div>
+        <div class="work-card">
+          <img src="assets/img/webdev3.webp" alt="Concept design for a modern landing page" width="643" height="360" loading="lazy" decoding="async">
+          <div class="arrow"><i class="fa-solid fa-arrow-up-right"></i></div>
+          <div class="work-overlay">
+            <span class="tag">Landing Page</span>
+            <h3>Product Launch Page</h3>
+          </div>
+        </div>
+        <div class="work-card">
+          <img src="assets/img/typing-stock.webp" alt="Concept design for an e-commerce storefront" width="540" height="360" loading="lazy" decoding="async">
+          <div class="arrow"><i class="fa-solid fa-arrow-up-right"></i></div>
+          <div class="work-overlay">
+            <span class="tag">E-Commerce</span>
+            <h3>Online Storefront Build</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING PREVIEW -->
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="section-head center" data-reveal>
+        <span class="eyebrow">Pricing</span>
+        <h2>Straightforward pricing, <span class="grad-text">built for growth.</span></h2>
+        <p>No hidden fees. Pick a starting point and scale up as your business does.</p>
+      </div>
+
+      <div class="pricing-preview-row" data-reveal-stagger>
+        <div class="mini-price-card">
+          <div class="tier">Landing Page</div>
+          <div class="price"><span class="old">RM720</span></div>
+          <div class="price"><span class="new">RM399</span></div>
+          <div class="from">Starting from</div>
+        </div>
+        <div class="mini-price-card">
+          <div class="tier">Business Website</div>
+          <div class="price"><span class="old">RM2,520</span></div>
+          <div class="price"><span class="new">RM1,299</span></div>
+          <div class="from">Starting from</div>
+        </div>
+        <div class="mini-price-card">
+          <div class="tier">E-Commerce Website</div>
+          <div class="price"><span class="new">RM1,999</span></div>
+          <div class="from">Starting from</div>
+        </div>
+      </div>
+      <div class="text-center mt-32">
+        <a href="pricing.html" class="btn btn-brand magnetic">View Full Pricing <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="cta-band" data-reveal>
+        <h2>Let's build something <span class="grad-text">great.</span></h2>
+        <p>Every business deserves its own corner of the internet. Tell us about your project and we'll get back to you within 24 hours.</p>
+        <div class="cta-row">
+          <a href="contact.html" class="btn btn-primary btn-lg magnetic">Get Started Today</a>
+          <a href="https://wa.me/60195365308?text=Hi!%20I%20would%20like%20to%20enquire%20more%20about%20your%20web%20design%20services." class="btn btn-ghost btn-lg" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="brand"><img src="assets/img/logo-full.webp" class="logo-full" alt="Rovexa logo" width="340" height="66" decoding="async"><img src="assets/img/logo-icon.webp" class="logo-icon" alt="Rovexa logo" width="72" height="64" decoding="async"></a>
+        <p>Rovexa is a Kuala Lumpur-based web design studio building fast, conversion-focused websites for businesses across Malaysia.</p>
+        <div class="footer-social">
+          <a href="https://wa.me/60195365308" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.linkedin.com/in/danial-remy-1b3aa7388/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/remy.css/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="pricing.html">Landing Pages</a></li>
+          <li><a href="pricing.html">Business Websites</a></li>
+          <li><a href="pricing.html">E-Commerce Stores</a></li>
+          <li><a href="services.html">Maintenance</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+60195365308">+6019-536-5308</a></li>
+          <li><a href="mailto:danialremy44@gmail.com">danialremy44@gmail.com</a></li>
+          <li><span>Kuala Lumpur, Malaysia</span></li>
+          <li><span>Support available 24/7</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Rovexa Web Designs. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script defer src="assets/js/hero-console.js"></script>
+<script defer src="assets/js/main.js"></script>
+</body>
+</html>
